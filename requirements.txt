@@ -1,0 +1,6 @@
+streamlit
+Pillow
+google-generativeai
+pandas
+opencv-python-headless
+ffmpeg-python
