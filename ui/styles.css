@@ -1,0 +1,76 @@
+/* Reset & basic */
+.main > div { 
+    padding: 0.5rem !important; 
+    max-width: 100% !important; 
+}
+.stApp { 
+    background: #07070e; 
+    font-family: -apple-system, sans-serif; 
+}
+
+/* Buttons - mobile friendly */
+.stButton > button {
+    width: 100% !important;
+    min-height: 44px !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #6d6aff, #8b7ff7) !important;
+    color: white !important;
+    box-shadow: 0 4px 16px #6d6aff44 !important;
+}
+
+/* Cards */
+.stAlert { border-radius: 10px !important; }
+.stSuccess > div { 
+    background: #052013 !important; 
+    border: 1px solid #22c55e33 !important; 
+    color: #4ade80 !important; 
+}
+.stInfo > div { 
+    background: #050f2a !important; 
+    border: 1px solid #6d6aff33 !important; 
+    color: #a78bfa !important; 
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    .stColumns { flex-wrap: wrap !important; }
+    [data-testid="column"] { min-width: 100% !important; }
+}
+
+/* Click hint */
+.click-hint {
+    padding: 0.5rem 0.75rem;
+    background: #6d6aff0d;
+    border: 1px solid #6d6aff22;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: #ffffff66;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.click-hint strong { color: #a78bfa; }
+
+/* Progress bars */
+.stProgress > div > div {
+    background: linear-gradient(90deg, #6d6aff, #8b7ff7) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #07070e;
+}
+::-webkit-scrollbar-thumb {
+    background: #6d6aff44;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6d6aff66;
+}
